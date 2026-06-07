@@ -1217,3 +1217,66 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
+@media (max-width: 768px) {
+
+  body {
+    align-items: center; /* besser zentriert auf Handy */
+    perspective: 500px;  /* weniger extreme 3D Tiefe */
+  }
+
+  .flowers {
+    transform: scale(0.55);
+  }
+
+  .night {
+    filter: blur(0.08vmin);
+  }
+
+  /* Blumen etwas näher zusammenziehen */
+  .flower {
+    bottom: 5vmin;
+  }
+
+  .flower--2 {
+    left: 45%;
+  }
+
+  .flower--3 {
+    left: 45%;
+  }
+
+  /* Stängel nicht zu hoch auf kleinen Screens */
+  .flower--1 .flower__line {
+    height: 45vmin;
+  }
+
+  .flower--2 .flower__line {
+    height: 40vmin;
+  }
+
+  /* UI Button besser sichtbar */
+  .ui {
+    top: 12px;
+  }
+
+  #startBtn {
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+
+  /* weniger „überlauf“ bei Gras & Deko */
+  .flower__grass {
+    transform: scale(0.65) rotate(-48deg) rotateY(40deg);
+  }
+
+  .long-g {
+    transform: scale(0.55);
+    left: -20vmin;
+  }
+
+  /* Performance: weniger harte Blur-Last */
+  .flower__light {
+    filter: blur(0.15vmin);
+  }
+}
