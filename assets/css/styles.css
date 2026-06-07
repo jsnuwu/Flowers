@@ -1,3 +1,8 @@
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 *,
 *::after,
 *::before {
@@ -1215,4 +1220,51 @@ body {
     background: #ff4d8d;
     color: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+
+  body {
+    perspective: 600px;
+  }
+
+  .flowers {
+    transform: scale(0.6);
+  }
+
+  .flower {
+    bottom: 5vmin;
+  }
+
+  .flower--1 .flower__line {
+    height: 50vmin;
+  }
+
+  .flower--2 .flower__line {
+    height: 45vmin;
+  }
+
+  /* weniger Chaos auf kleinen Screens */
+  .flower__grass {
+    transform: scale(0.7) rotate(-48deg) rotateY(40deg);
+  }
+
+  .flower__g-right .leaf {
+    width: 20vmin;
+    height: 35vmin;
+  }
+
+  .long-g {
+    transform: scale(0.6);
+    left: -25vmin;
+  }
+
+  .ui {
+    top: 10px;
+  }
+
+  #startBtn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 }
