@@ -1196,3 +1196,23 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+
+
+.ui {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+#startBtn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #ff4d8d;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
